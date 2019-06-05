@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: gray;
 }
 
 .clearfix::after {
@@ -47,13 +48,23 @@ section:last-child {
 	margin-right: 0;
 }
 
+/* 768px以下の画面に適用されます　*/
 @media screen and (max-width:768px) {
-	.section {
+    section {
 		float: none;
 		width: 90%;
 		margin-bottom: 20px;
+		margin-right: 5%;
+		margin-left: 5%;
 	}
 
+    p {
+     	width: 100%;
+     }
+
+	img {
+		width: 100%;
+	}
 	.main-box {
 		width: 100%;
 	}
