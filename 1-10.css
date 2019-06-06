@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	margin: 0 auto;
+	background-color: #EC715F;
+}
+
+.header-box {
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+
+img {
+	height: 70px;
+	float: left;
+}
+
+nav {
+	float: left;
+}
+
+.nav-list {
+	text-align: center;
+	position: absolute;
+	top: 25px;
+	right: 30px;
+}
+
+.nav-list-item {
+	list-style: none;
+	display: inline-block;
+	padding: 0 30px;
+	font-size: 16px;
+	color: #FAFAFA;
+}
