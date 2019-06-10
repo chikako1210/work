@@ -4,6 +4,26 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
 header {
 	width: 100%;
 	height: 70px;
@@ -20,6 +40,11 @@ header {
 img {
 	height: 70px;
 	float: left;
+}
+
+header i {
+	display: none;
+	color: #EC715F;
 }
 
 nav {
@@ -40,3 +65,447 @@ nav {
 	font-size: 16px;
 	color: #FAFAFA;
 }
+
+.main-visual {
+	background-image: url(img/mv.png);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 650px;
+}
+
+.main-visual-content {
+	padding-top: 200px;
+	margin: 0 auto;
+	width: 600px;
+}
+
+h1 {
+	font-size: 64px;
+	color: #FAFAFA;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.main-visual-content p {
+	color: #FAFAFA;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 0;
+}
+
+.portfolio {
+	background-color: #ECEFF1;
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+	font-size: 32px;
+	color: #000000;
+	padding-top: 90px;
+	position: relative;
+}
+/* 見出しの下の線　*/
+h2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;/*線の上下位置*/
+  width: 70px;/*線の長さ*/
+  height: 3px;/*線の太さ*/
+  background-color: #EC715F;/*線の色*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+}
+
+section p {
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	padding: 30px 0;
+}
+
+.br-sp {
+    	display: none;
+    }
+
+.portfolio-image {
+	width: 920px;
+	padding-bottom: 90px;
+	margin: 0 auto;
+}
+
+.portfolio-image-box {
+	width: 300px;
+	height: 250px;
+	float: left;
+	background-size: cover;
+	background-position: center;
+}
+
+.portfolio-image-box:nth-child(1) {
+	background-image: url(img/sketch.jpg);
+	margin-bottom: 10px;
+}
+.portfolio-image-box:nth-child(2) {
+	background-image: url(img/websuku.png);
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.portfolio-image-box:nth-child(3) {
+	background-image: url(img/write.jpg);
+	margin-bottom: 10px;
+}
+.portfolio-image-box:nth-child(4) {
+	background-image: url(img/webcamp.png);
+}
+.portfolio-image-box:nth-child(5) {
+	background-image: url(img/talk.jpg);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.portfolio-image-box:nth-child(6) {
+	background-image: url(img/webcamp-mother.png);
+}
+
+.feature-contents {
+	margin: 0 auto;
+	width: 980px;
+	padding-bottom: 90px;
+}
+
+.strength {
+	float: left;
+	width: 320px;
+	text-align: center;
+}
+
+.strength:nth-child(2) {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.strength h3 {
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+}
+
+.strength p {
+	text-align: left;
+	padding-top: 10px;
+}
+
+.strength i {
+	font-size: 60px;
+	padding-bottom: 10px;
+}
+
+.profile {
+	background-color: #ECEFF1;
+	width: 100%;
+}
+
+.profile-contents {
+	width: 1024px;
+	margin: 0 auto;
+	padding-bottom: 90px;
+}
+
+.photo-man {
+	width: 512px;
+	height: 250px;
+	float: left;
+}
+
+.photo {
+	width: 250px;
+	height: 250px;
+	background-image: url(img/my-icon.jpg);
+	background-position: center;
+	margin: 0 auto;
+	border-radius: 150px;
+}
+
+.profile-text {
+	width: 512px;
+	float: left;
+	text-align: left;
+}
+.profile-text h3 {
+	font-size: 20px;
+	text-align: left;
+}
+
+.profile-text h3:nth-child(2) {
+	padding-top: 20px;
+}
+
+.profile-text p {
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+	padding-top: 5px;
+}
+
+.contact-contents {
+	width: 800px;
+	margin: 0 auto;
+	padding-bottom: 90px;
+}
+
+.mail-tell {
+	width: 400px;
+	float: left;
+}
+
+#tell {
+	padding-top: 20px;
+}
+
+.sns {
+	width: 400px;
+	float: left;
+}
+
+.contact-box {
+	width: 200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.contact-box h3 {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+.contact-box i {
+	font-size: 50px;
+	padding-right: 20px;
+}
+
+.contact-box h3:nth-child(2) {
+	padding-top: 20px;
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	background-color: #EC715F;
+	padding: 0;
+}
+
+footer p {
+	font-size: 16px;
+	color: #FAFAFA;
+	padding: 0;
+	text-align: center;
+	line-height: 60px;
+}
+
+/* レスポンシブ対応用のcss */
+
+@media screen and (max-width:768px) {
+	header {
+		height: 50px;
+		width: 100%;
+	}
+
+	.header-box {
+	   width: 100%;
+	   padding: 0 5px;
+	   position: relative;
+    }
+
+    img {
+    	padding: 0px;
+    	float: none;
+    }
+
+	header i {
+		font-size: 40px;
+		color: #fff;
+		padding: 5px 0;
+		position: absolute;
+		right: 10px;
+		}
+
+	.nav-list {
+		display: none;
+	}
+
+	img {
+		height: 50px;
+	}
+
+	.main-visual {
+		width: 100%;
+		padding: 0 5%;
+		background-image: url(img/code.png);
+	}
+
+	.main-visual-content {
+		width: 350px;
+		padding-top: 250px;
+	}
+
+	h1 {
+		font-size: 40px;
+		padding-bottom: 10px;
+	}
+
+	.main-visual-content p {
+		font-size: 18px;
+	}
+
+    .main {
+    	width: 100%;
+    }
+
+    .br-pc {
+    	display:none;
+    }
+    .br-sp {
+    	display:block;
+    }
+
+    .portfolio {
+    	width: 100%;
+    	padding-left: 5%;
+    	padding-right: 5%;
+    }
+
+
+    .portfolio-image-box {
+    	float: none;
+    	width: 300px;
+    	height: 250px;
+    	padding-left: 0px;
+    	padding-right: 0px;
+    }
+
+    .portfolio-image-box:nth-child(1) {
+    	background-image: url(img/websuku.png);
+    }
+
+    .portfolio-image-box:nth-child(2) {
+    	background-image: url(img/webcamp.png);
+    	margin-left: 0px;
+    	margin-right: 0px;
+    }
+
+    .portfolio-image-box:nth-child(3) {
+    	background-image: url(img/webcamp-mother.png);
+    }
+
+    .portfolio-image-box:nth-child(4) {
+    	display: none;
+    }
+
+    .portfolio-image-box:nth-child(5) {
+    	display: none;
+    }
+
+    .portfolio-image-box:nth-child(6) {
+    	display: none;
+    }
+
+    .portfolio-image {
+    	width: 300px;
+    }
+
+    .feature {
+    	width: 100%;
+    	padding-left: 5%;
+    	padding-right: 5%;
+    }
+
+    .strength {
+    	float: none;
+    }
+
+    .feature-contents {
+    	width: 300px;
+    	margin: 0 auto;
+    }
+
+    .profile {
+    	width: 100%;
+    	padding-right: 5%;
+    	padding-left: 5%;
+    }
+
+    .profile-contents {
+    	text-align: center;
+    	width: 100%;
+    }
+
+    .photo-man {
+    	float: none;
+    	width: 500px;
+    	margin: 0 auto;
+
+    }
+
+    .photo {
+    	padding-bottom: 20px;
+    	margin: 0 auto;
+    	width: 250px;
+    	height: 250px;
+    }
+
+    .profile-text {
+    	float: none;
+    	width: 512px;
+    	margin: 0 auto;
+    }
+
+    .profile-text h3 {
+    	text-align: center;
+    	padding-top: 20px;
+    }
+
+    .profile-text p {
+    	text-align: center;
+    }
+
+    .contact {
+    	width: 100%
+    	padding-right: 5%;
+    	padding-left: 5%;
+    }
+    
+    .contact-contents {
+    	width: 100%
+    }
+
+    .contact-box {
+    	text-align: center;
+    	width: 200px;
+    	margin: 0 auto;
+    }
+
+    .mail-tell {
+    	float: none;
+    	width: 180px;
+    	margin: 0 auto;
+    }
+
+    .sns {
+    	float: none;
+    	width: 180px;
+    	margin: 0 auto;
+    }
+
+    #sns-headline {
+    	margin-top: 20px;
+    }
+
+    footer {
+    	height: 60px;
+    	width: 100%;
+    	padding-left: 5%
+    	padding-right: 5%;
+    }
