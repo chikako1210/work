@@ -1,0 +1,59 @@
+
+ <div class="user-info">
+  <h2>User info</h2>
+  <div class="user-image"><%= attachment_image_tag user, :profile_image, :fill, 80, 80, format: 'jpeg', fallback: "no_image.jpg", size: '80x80' %></div>
+
+  <table class="table">
+    <tr>
+     <td><h5 >name</h5></td>
+     <td><h5><%= user.name %></h5></td>
+    </tr>
+    <tr>
+     <td><h5>introduction</h5></td>
+     <td><h5><%= user.introduction %></h5></td>
+   </tr>
+  </table>
+
+
+  <% if user.id == current_user.id %>
+  <button type="button" class="btn btn-default btn-block">
+  <%= link_to edit_user_path(user) do %>
+  <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span><% end %></button>
+  <% end %>
+
+ </div>
+
+
+ <div class="new-book">
+
+  <h2>New book</h2>
+
+  <%= form_for(newbook) do |f| %>
+  <% if newbook.errors.any? %>
+   <div class="alert alert-warning" role="alert">
+     <h4><%= newbook.errors.count %>件のerrorがあります。</h4>
+      <ul>
+      <% newbook.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+   </div>
+  <% end %>
+
+  <div class="form-body">
+    <div class="form-group">
+     <label>Title</label>
+       <%= f.text_field :title, class:"form-control" %>
+     </div>
+    <div class="form-group">
+     <label>Opinion</label>
+       <%= f.text_area :body, class:"form-control" %>
+    </div>
+
+  <div class="actions">
+  <%= f.submit 'Create Book', class:"btn btn-primary btn-block" %>
+  <% end %></div>
+
+ </div>
+
+</div>
